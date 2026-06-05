@@ -1,0 +1,2 @@
+2026/03/04 11:39:57 [emerg] 69462#69462: cannot load certificate "/etc/letsencrypt/live/admissions.lasakedu.in/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/admissions.lasakedu.in/fullchain.pem, r) error:10000080:BIO routines::no such file)
+nginx: configuration file /etc/nginx/nginx.conf test failed

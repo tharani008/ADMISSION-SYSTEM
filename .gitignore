@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files (NEVER commit these)
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+
+# Logs
+*.log
+logs/
+server_requests.log
+test_email_output.txt
+test_email_full_log.txt
+users_output.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Deployment zips
+*.zip
+deployment_packages/
+
+# Debug files
+diff.txt
+diff_utf8.txt
+certificate_debug.html
+.vercel
+.env*.local

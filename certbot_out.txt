@@ -1,0 +1,24 @@
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for admissions.lasakedu.in and 3 more domains
+
+Certbot failed to authenticate some domains (authenticator: standalone). The Certificate Authority reported these problems:
+  Domain: admissions.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://admissions.lasakedu.in/.well-known/acme-challenge/47U6kwWKIYoy94yUZrAgWG4XirqeD6M82ggAjgdOJEA: 404
+
+  Domain: api.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://api.lasakedu.in/.well-known/acme-challenge/OPKD2bYptxQz8dKlQwIQgBYt8_3SJ2t6gr739hEpFQo: 404
+
+  Domain: enrolled.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://enrolled.lasakedu.in/.well-known/acme-challenge/zbAQIRSVMdEB3ghWQnc2vm8OgjlSuHTuSBn85mEX7nU: 404
+
+  Domain: franchise.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://franchise.lasakedu.in/.well-known/acme-challenge/muTdUBQrXjuegPg-gjIAlGjdYSLgHIP9AiXz1pGaRnc: 404
+
+Hint: The Certificate Authority failed to download the challenge files from the temporary standalone webserver started by Certbot on port 80. Ensure that the listed domains point to this machine and that it can accept inbound connections from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.

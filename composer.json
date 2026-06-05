@@ -1,0 +1,14 @@
+{
+    "name": "lasakedu/admission-monolith",
+    "description": "Lasak Edu Admission Management System PHP Monolith",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "google/cloud-firestore": "^1.32",
+        "google/cloud-storage": "^1.30",
+        "phpmailer/phpmailer": "^6.8",
+        "setasign/fpdf": "^1.8",
+        "razorpay/razorpay": "^2.9",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "lasak-c1db5"
+  },
+  "targets": {
+    "lasak-c1db5": {
+      "hosting": {
+        "admission": [
+          "lasak-admission"
+        ],
+        "franchise": [
+          "lasak-c1db5-franchise"
+        ],
+        "enrolled": [
+          "lasak-c1db5-enrolled"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -1,0 +1,8 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0    18    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 308 Permanent Redirect
+Location: https://admissions.lasakedu.in/
+Date: Wed, 04 Mar 2026 11:33:54 GMT
+Content-Length: 18
+

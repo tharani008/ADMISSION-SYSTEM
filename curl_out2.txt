@@ -1,0 +1,24 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host admissions.lasakedu.in:80 was resolved.
+* IPv6: (none)
+* IPv4: 187.77.191.132
+*   Trying 187.77.191.132:80...
+* Connected to admissions.lasakedu.in (187.77.191.132) port 80
+> HEAD / HTTP/1.1
+> Host: admissions.lasakedu.in
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 308 Permanent Redirect
+< Location: https://admissions.lasakedu.in/
+< Date: Wed, 04 Mar 2026 11:39:00 GMT
+< Content-Length: 18
+< 
+  0    18    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host admissions.lasakedu.in left intact
+HTTP/1.1 308 Permanent Redirect
+Location: https://admissions.lasakedu.in/
+Date: Wed, 04 Mar 2026 11:39:00 GMT
+Content-Length: 18
+

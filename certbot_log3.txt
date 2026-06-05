@@ -1,0 +1,50 @@
+Certbot failed to authenticate some domains (authenticator: standalone). The Certificate Authority reported these problems:
+  Domain: admissions.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://admissions.lasakedu.in/.well-known/acme-challenge/XdryqAne4EuN5vnsW7_8ct7LqCBUm8M5rixLOoKCNUU: 404
+
+  Domain: api.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://api.lasakedu.in/.well-known/acme-challenge/eY2LfZE2Cxes5dlW7ERN3abSXIyyftlSbT5EjjZK2RQ: 404
+
+  Domain: enrolled.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://enrolled.lasakedu.in/.well-known/acme-challenge/7QePzEwqXrVznJvgU4bgno80GKg9GT4p6Nq2_mqMbuM: 404
+
+  Domain: franchise.lasakedu.in
+  Type:   unauthorized
+  Detail: 187.77.191.132: Invalid response from https://franchise.lasakedu.in/.well-known/acme-challenge/-HS3woaNufnABlOufaZE0JPMBQPBYfP3LY-sDsk5LbA: 404
+
+Hint: The Certificate Authority failed to download the challenge files from the temporary standalone webserver started by Certbot on port 80. Ensure that the listed domains point to this machine and that it can accept inbound connections from the internet.
+
+2026-03-04 11:51:03,618:DEBUG:certbot._internal.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/_internal/auth_handler.py", line 108, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/auth_handler.py", line 212, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+
+2026-03-04 11:51:03,618:DEBUG:certbot._internal.error_handler:Calling registered functions
+2026-03-04 11:51:03,618:INFO:certbot._internal.auth_handler:Cleaning up challenges
+2026-03-04 11:51:03,618:DEBUG:certbot._internal.plugins.standalone:Stopping server at :::80...
+2026-03-04 11:51:03,657:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 33, in <module>
+    sys.exit(load_entry_point('certbot==2.9.0', 'console_scripts', 'certbot')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 19, in main
+--
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/certbot/_internal/client.py", line 428, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/certbot/_internal/client.py", line 496, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, self.config, best_effort)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/certbot/_internal/auth_handler.py", line 108, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/auth_handler.py", line 212, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+2026-03-04 11:51:03,659:ERROR:certbot._internal.log:Some challenges have failed.
